@@ -3,7 +3,10 @@ use cmake::Config;
 use std::{env, path::PathBuf};
 
 fn main() {
-    let dst = Config::new("source").define("ICB", "ON").build();
+    let dst = Config::new("source")
+        .define("ICB", "ON")
+        .define("CMAKE_Fortran_FLAGS", "-fPIC")
+        .build();
     let bindings = Builder::default()
         .header(&format!("{}/include/arpack/arpack.h", dst.display()))
         .generate()
