@@ -1,6 +1,6 @@
 [package]
 name = "arpack-ng-sys"
-version = "0.1.3-alpha.1"
+version = "0.2.0"
 authors = ["Daniel Hauck <mail@dhauck.eu>"]
 edition = "2018"
 build = "build.rs"
