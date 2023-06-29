@@ -17,7 +17,8 @@ system = ["pkg-config"]
 [dependencies]
 
 [build-dependencies]
-bindgen = "0.54"
+bindgen = "0.66.1"
+
 
 [build-dependencies.cmake]
 version = "0.1"
